@@ -1,0 +1,448 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    background: white;
+    font-family: Arial, Helvetica, sans-serif;
+    /**/
+    /*display: flex;
+    flex-direction: column;
+    height: 100vh;*/
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #444;
+    margin: 5px;
+}
+
+.deneme {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(0, 0, 0);
+    width: 1238px;
+    margin-left: 110px;
+    height: 400px;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+.deneme p {
+    margin-top: 50px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: xx-large;
+    line-height: 40px;
+}
+
+footer {
+    background-color: #111;
+    margin-top: 50px;
+}
+
+.footerContainer {
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+
+.socialIcons {
+    display: flex;
+    justify-content: center;
+}
+
+.socialIcons a {
+    display: inline-block;
+    height: 44px;
+    width: 44px;
+    color: white;
+    background-color: rgba(40, 130, 214, 0.8);
+    margin: 0px 8px 8px 0px;
+    text-align: center;
+    line-height: 44px;
+    border-radius: 50%;
+    transition: 0.4s;
+    /*text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;*/
+}
+
+.socialIcon a i {
+    font-size: 2em;
+    color: black;
+    padding: 10px;
+    opacity: 0.9;
+}
+
+.socialIcons a:hover {
+    background-color: #111;
+    transition: 0.5s;
+}
+
+.socialIcons a:hover i {
+    color: white;
+    transition: 0.5s;
+}
+
+.footerNav {
+    margin: 30px 0px;
+}
+
+.footerNav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.footerNav ul li a {
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.footerNav ul li a:hover {
+    opacity: 1;
+}
+
+.footerBottom {
+    background-color: #111;
+    padding: 20px;
+    text-align: center;
+}
+
+.footerBottom p {
+    color: white;
+}
+
+.designer {
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+
+/*footer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: auto;
+    background-color: rgba(0, 0, 0, 0.778);
+    padding: 60px 10%;
+}
+
+.footer-col {
+    width: 25%;
+    list-style-type: none;
+}
+
+.footer-col h4 {
+    position: relative;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 22px;
+    margin-left: 30px;
+    color: rgb(255, 123, 0);
+    text-transform: capitalize;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    background-color: rgb(192, 192, 192);
+    height: 2px;
+    width: 80px;
+}
+
+ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+ul li a {
+    display: block;
+    font-size: 19px;
+    text-transform: capitalize;
+    color: antiquewhite;
+    text-decoration: none;
+    transition: 0.4s;
+    list-style-type: none;
+}
+
+ul li a:hover {
+    color: white;
+    padding-left: 5px;
+}
+
+.links a {
+    display: inline-block;
+    height: 44px;
+    width: 44px;
+    color: white;
+    background-color: rgba(40, 130, 214, 0.8);
+    margin: 0px 8px 8px 0px;
+    text-align: center;
+    line-height: 44px;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+.links a:hover {
+    color: #656464;
+    background-color: #ffffff;
+}
+
+.links {
+    padding-left: 30px;
+    list-style-type: none;
+}*/
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    background: rgba(11, 54, 55, 0.778);
+    height: 66px;
+}
+
+header * {
+    color: rgb(255, 255, 255);
+}
+
+header .logo {
+    float: left;
+    height: inherit;
+    margin-left: 2em;
+}
+
+header .logo-text {
+    margin: 9px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header .logo-text span {
+    color: rgba(0, 0, 0, 0.778);
+}
+
+header ul {
+    float: right;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+header ul li {
+    float: left;
+    position: relative;
+}
+
+header ul li ul {
+    position: absolute;
+    top: 66px;
+    right: 0px;
+    width: 180px;
+    display: none;
+    z-index: 88888;
+}
+
+header ul li:hover ul {
+    display: block;
+}
+
+header ul li ul li {
+    width: 100%;
+}
+
+header ul li ul li a {
+    padding: 10px;
+    background: white;
+    color: rgb(0, 0, 0);
+}
+
+header ul li ul li a.logout {
+    color: red;
+}
+
+header ul li ul li a:hover {
+    background: rgb(193, 189, 181);
+}
+
+header ul li a {
+    display: block;
+    padding: 21px;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+
+header ul li a:hover {
+    background: rgb(64, 54, 54);
+    transition: 0.5s;
+}
+
+header .menu-toggle {
+    display: none;
+}
+
+.page-wrapper a:hover {
+    color: rgba(17, 87, 88, 0.7);
+}
+
+
+/* POST SLIDER */
+
+.post-slider {
+    position: relative;
+}
+
+.post-slider .slider-title {
+    text-align: center;
+    margin: 30px auto;
+}
+
+.post-slider .next {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    font-size: 2em;
+    color: rgba(17, 87, 88, 0.7);
+    cursor: pointer;
+}
+
+.post-slider .prev {
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    font-size: 2em;
+    color: rgba(17, 87, 88, 0.7);
+    cursor: pointer;
+}
+
+.post-slider .post-wrapper {
+    width: 84%;
+    height: 350px;
+    margin-top: 0px auto;
+    overflow: hidden;
+    padding: 10px 0px 10px 0px;
+    margin-left: 110px;
+}
+
+.post-slider .post-wrapper .post {
+    width: 300px;
+    height: 330px;
+    margin: 0px 10px;
+    background: rgba(255, 255, 255, 0.778);
+    display: inline-block;
+    border-radius: 5px;
+    box-shadow: 10px 25px 30px rgba(30, 30, 200, 0.3);
+}
+
+.post-slider .post-wrapper .post .post-info {
+    height: 130px;
+    padding: 5px;
+}
+
+.post-slider .post-wrapper .post .slider-image {
+    width: 100%;
+    height: 250px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width:680px) {
+    /* .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .footer-col h4::before {
+        all: unset;
+    }*/
+    /*.footerNav {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }*/
+    footer {
+        width: 100%;
+        text-align: center;
+    }
+    .footerNav ul {
+        flex-direction: column;
+    }
+    .footerNav ul li {
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+    .socialIcons {
+        text-align: center;
+        margin-left: 60px;
+    }
+    .deneme {
+        width: 85%;
+        text-align: justify;
+    }
+    .deneme p {
+        font-size: 15px;
+    }
+    header {
+        position: relative;
+    }
+    header ul {
+        width: 100%;
+        background: rgba(17, 87, 88, 0.7);
+        max-height: 0px;
+        overflow: hidden;
+    }
+    .showing {
+        max-height: 100em;
+    }
+    header ul li {
+        width: 100%;
+    }
+    header ul li ul {
+        position: static;
+        width: 100%;
+        display: block;
+    }
+    header ul li ul li a {
+        padding: 10px;
+        background: rgba(17, 87, 88, 0.7);
+        color: rgb(255, 255, 255);
+        padding-left: 50px;
+    }
+    header ul li ul li a {
+        background: rgba(17, 87, 88, 0.7);
+    }
+    header ul li ul li a.logout {
+        color: red;
+    }
+    header .menu-toggle {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        font-size: 1.9em;
+    }
+    header .logo {
+        margin-left: .5em;
+    }
+}
